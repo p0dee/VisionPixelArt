@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025DD0902A3EDAAF00EC7563 /* PixelArtMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD08F2A3EDAAF00EC7563 /* PixelArtMakerApp.swift */; };
+		025DD0922A3EDAAF00EC7563 /* ArtEditorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */; };
+		025DD0942A3EDAB000EC7563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025DD0932A3EDAB000EC7563 /* Assets.xcassets */; };
+		025DD0972A3EDAB000EC7563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025DD0962A3EDAB000EC7563 /* Preview Assets.xcassets */; };
+		025DD09E2A3EDAC500EC7563 /* ArtEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD09D2A3EDAC500EC7563 /* ArtEditor.swift */; };
+		026931F32B595BD900D03A03 /* PaintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026931F22B595BD900D03A03 /* PaintColor.swift */; };
+		026931F52B5962BC00D03A03 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026931F42B5962BC00D03A03 /* SwiftUIExtensions.swift */; };
+		0273CC912A54EE8800895F5D /* ArtPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CC902A54EE8800895F5D /* ArtPreviewView.swift */; };
+		0273CCA02A563DCB00895F5D /* PixelMap3DContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CC9F2A563DCB00895F5D /* PixelMap3DContentView.swift */; };
+		0273CCA22A5856F600895F5D /* PixelMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CCA12A5856F600895F5D /* PixelMapData.swift */; };
+		0273CCA42A59380200895F5D /* ArtCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CCA32A59380200895F5D /* ArtCanvas.swift */; };
+		0273CCA62A5A6D3E00895F5D /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CCA52A5A6D3E00895F5D /* AppViewModel.swift */; };
+		0273CCA92A5BD27100895F5D /* ModelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CC972A563D7400895F5D /* ModelComponent.swift */; };
+		0273CCAE2A5BD27100895F5D /* ModelEntity+Paint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CC932A563D7400895F5D /* ModelEntity+Paint.swift */; };
+		0273CCB02A5C480500895F5D /* ImmersiveContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273CCAF2A5C480500895F5D /* ImmersiveContent.swift */; };
+		02CFBDA52A3EDFE80044E599 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFBDA42A3EDFE80044E599 /* ColorPalette.swift */; };
+		02CFBDA72A432F2A0044E599 /* ArtCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFBDA62A432F2A0044E599 /* ArtCollectionView.swift */; };
+		02CFBDA92A4332160044E599 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CFBDA82A4332160044E599 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		025DD08C2A3EDAAF00EC7563 /* PixelArtMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelArtMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025DD08F2A3EDAAF00EC7563 /* PixelArtMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelArtMakerApp.swift; sourceTree = "<group>"; };
+		025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtEditorContainerView.swift; sourceTree = "<group>"; };
+		025DD0932A3EDAB000EC7563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025DD0962A3EDAB000EC7563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		025DD09D2A3EDAC500EC7563 /* ArtEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtEditor.swift; sourceTree = "<group>"; };
+		026931F22B595BD900D03A03 /* PaintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintColor.swift; sourceTree = "<group>"; };
+		026931F42B5962BC00D03A03 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
+		0273CC902A54EE8800895F5D /* ArtPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtPreviewView.swift; sourceTree = "<group>"; };
+		0273CC932A563D7400895F5D /* ModelEntity+Paint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModelEntity+Paint.swift"; sourceTree = "<group>"; };
+		0273CC972A563D7400895F5D /* ModelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelComponent.swift; sourceTree = "<group>"; };
+		0273CC9F2A563DCB00895F5D /* PixelMap3DContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMap3DContentView.swift; sourceTree = "<group>"; };
+		0273CCA12A5856F600895F5D /* PixelMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelMapData.swift; sourceTree = "<group>"; };
+		0273CCA32A59380200895F5D /* ArtCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCanvas.swift; sourceTree = "<group>"; };
+		0273CCA52A5A6D3E00895F5D /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		0273CCAF2A5C480500895F5D /* ImmersiveContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveContent.swift; sourceTree = "<group>"; };
+		02CFBDA42A3EDFE80044E599 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		02CFBDA62A432F2A0044E599 /* ArtCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionView.swift; sourceTree = "<group>"; };
+		02CFBDA82A4332160044E599 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025DD0892A3EDAAF00EC7563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025DD0832A3EDAAF00EC7563 = {
+			isa = PBXGroup;
+			children = (
+				025DD08E2A3EDAAF00EC7563 /* PixelArtMaker */,
+				025DD08D2A3EDAAF00EC7563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		025DD08D2A3EDAAF00EC7563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025DD08C2A3EDAAF00EC7563 /* PixelArtMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025DD08E2A3EDAAF00EC7563 /* PixelArtMaker */ = {
+			isa = PBXGroup;
+			children = (
+				026931F72B6009A800D03A03 /* App */,
+				026931F92B6009FE00D03A03 /* Model */,
+				026931F82B6009E000D03A03 /* Extension */,
+				026931F62B60098A00D03A03 /* Component */,
+				026931FA2B600A8B00D03A03 /* 2D View */,
+				026931FB2B600AD400D03A03 /* 3D View */,
+				0273CC922A563D5E00895F5D /* Old Resources */,
+				025DD0952A3EDAB000EC7563 /* Preview Content */,
+				025DD0932A3EDAB000EC7563 /* Assets.xcassets */,
+			);
+			path = PixelArtMaker;
+			sourceTree = "<group>";
+		};
+		025DD0952A3EDAB000EC7563 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				025DD0962A3EDAB000EC7563 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		026931F62B60098A00D03A03 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0273CCA32A59380200895F5D /* ArtCanvas.swift */,
+				025DD09D2A3EDAC500EC7563 /* ArtEditor.swift */,
+				02CFBDA42A3EDFE80044E599 /* ColorPalette.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		026931F72B6009A800D03A03 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				025DD08F2A3EDAAF00EC7563 /* PixelArtMakerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		026931F82B6009E000D03A03 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				026931F42B5962BC00D03A03 /* SwiftUIExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		026931F92B6009FE00D03A03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0273CCA52A5A6D3E00895F5D /* AppViewModel.swift */,
+				026931F22B595BD900D03A03 /* PaintColor.swift */,
+				0273CCA12A5856F600895F5D /* PixelMapData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		026931FA2B600A8B00D03A03 /* 2D View */ = {
+			isa = PBXGroup;
+			children = (
+				02CFBDA82A4332160044E599 /* ContentView.swift */,
+				02CFBDA62A432F2A0044E599 /* ArtCollectionView.swift */,
+				025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */,
+				0273CC902A54EE8800895F5D /* ArtPreviewView.swift */,
+			);
+			path = "2D View";
+			sourceTree = "<group>";
+		};
+		026931FB2B600AD400D03A03 /* 3D View */ = {
+			isa = PBXGroup;
+			children = (
+				0273CCAF2A5C480500895F5D /* ImmersiveContent.swift */,
+				0273CC9F2A563DCB00895F5D /* PixelMap3DContentView.swift */,
+			);
+			path = "3D View";
+			sourceTree = "<group>";
+		};
+		0273CC922A563D5E00895F5D /* Old Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0273CC972A563D7400895F5D /* ModelComponent.swift */,
+				0273CC932A563D7400895F5D /* ModelEntity+Paint.swift */,
+			);
+			path = "Old Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025DD08B2A3EDAAF00EC7563 /* PixelArtMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025DD09A2A3EDAB000EC7563 /* Build configuration list for PBXNativeTarget "PixelArtMaker" */;
+			buildPhases = (
+				025DD0882A3EDAAF00EC7563 /* Sources */,
+				025DD0892A3EDAAF00EC7563 /* Frameworks */,
+				025DD08A2A3EDAAF00EC7563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelArtMaker;
+			productName = PixelArtMaker;
+			productReference = 025DD08C2A3EDAAF00EC7563 /* PixelArtMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025DD0842A3EDAAF00EC7563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					025DD08B2A3EDAAF00EC7563 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 025DD0872A3EDAAF00EC7563 /* Build configuration list for PBXProject "PixelArtMaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025DD0832A3EDAAF00EC7563;
+			productRefGroup = 025DD08D2A3EDAAF00EC7563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025DD08B2A3EDAAF00EC7563 /* PixelArtMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025DD08A2A3EDAAF00EC7563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025DD0972A3EDAB000EC7563 /* Preview Assets.xcassets in Resources */,
+				025DD0942A3EDAB000EC7563 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025DD0882A3EDAAF00EC7563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0273CCA22A5856F600895F5D /* PixelMapData.swift in Sources */,
+				0273CCAE2A5BD27100895F5D /* ModelEntity+Paint.swift in Sources */,
+				0273CC912A54EE8800895F5D /* ArtPreviewView.swift in Sources */,
+				0273CCA02A563DCB00895F5D /* PixelMap3DContentView.swift in Sources */,
+				02CFBDA72A432F2A0044E599 /* ArtCollectionView.swift in Sources */,
+				0273CCA62A5A6D3E00895F5D /* AppViewModel.swift in Sources */,
+				0273CCB02A5C480500895F5D /* ImmersiveContent.swift in Sources */,
+				025DD09E2A3EDAC500EC7563 /* ArtEditor.swift in Sources */,
+				0273CCA42A59380200895F5D /* ArtCanvas.swift in Sources */,
+				02CFBDA92A4332160044E599 /* ContentView.swift in Sources */,
+				025DD0922A3EDAAF00EC7563 /* ArtEditorContainerView.swift in Sources */,
+				02CFBDA52A3EDFE80044E599 /* ColorPalette.swift in Sources */,
+				026931F52B5962BC00D03A03 /* SwiftUIExtensions.swift in Sources */,
+				025DD0902A3EDAAF00EC7563 /* PixelArtMakerApp.swift in Sources */,
+				026931F32B595BD900D03A03 /* PaintColor.swift in Sources */,
+				0273CCA92A5BD27100895F5D /* ModelComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		025DD0982A3EDAB000EC7563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025DD0992A3EDAB000EC7563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025DD09B2A3EDAB000EC7563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixelArtMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = A2UDK322XQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.p0dee.pixelartmaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		025DD09C2A3EDAB000EC7563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixelArtMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = A2UDK322XQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.p0dee.pixelartmaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025DD0872A3EDAAF00EC7563 /* Build configuration list for PBXProject "PixelArtMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025DD0982A3EDAB000EC7563 /* Debug */,
+				025DD0992A3EDAB000EC7563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025DD09A2A3EDAB000EC7563 /* Build configuration list for PBXNativeTarget "PixelArtMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025DD09B2A3EDAB000EC7563 /* Debug */,
+				025DD09C2A3EDAB000EC7563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 025DD0842A3EDAAF00EC7563 /* Project object */;
+}
