@@ -14,8 +14,7 @@ struct PaintColor: Codable, Identifiable, Equatable {
     
     var uiColor: UIColor {
         guard let color = UIColor(named: id) else {
-//            fatalError("There is no color named \"\(id)\".")
-            return .white
+            fatalError("There is no color named \"\(id)\".")
         }
         return color
     }

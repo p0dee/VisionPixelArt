@@ -5,19 +5,75 @@
 //  Created by Takeshi Tanaka on 2023/07/10.
 //
 
-import SwiftUI
 import ARKit
 import RealityKit
+import SwiftUI
+
+// refer to:
+// https://developer.apple.com/wwdc23/10082
+// https://github.com/shu223/visionOS-Sampler/blob/main/02_ARKitPlacingContent/
+@MainActor
+class ImmersiveContentModel: ObservableObject {
+    
+    private let session = ARKitSession()
+    private let planeDetection = PlaneDetectionProvider(alignments: [.horizontal])
+    
+    private var contentEntity = Entity()
+    private var entities: [UUID : Entity] = [:]
+    
+    func runSession() async {
+            guard PlaneDetectionProvider.isSupported else {
+                return
+            }
+
+            do {
+                try await session.run([planeDetection])
+                for await update in planeDetection.anchorUpdates {
+                    switch update.event {
+                    case .added, .updated:
+                        updatePlane(update.anchor)
+                    case .removed:
+                        removePlane(update.anchor)
+                    }
+                }
+            } catch {
+                print("ARKit session error \(error)")
+            }
+        }
+
+        @MainActor
+        func updatePlane(_ anchor: PlaneAnchor) {
+            if let planeEntity = entities[anchor.id] as? ModelEntity {
+                let newMesh = MeshResource.generatePlane(width: anchor.geometry.extent.width, height: anchor.geometry.extent.height)
+                planeEntity.model?.mesh = newMesh
+
+                planeEntity.transform = Transform(matrix: anchor.geometry.extent.anchorFromExtentTransform)
+            } else {
+                let material = UnlitMaterial(color: .red)
+                let planeEntity = ModelEntity(mesh: .generatePlane(width: anchor.geometry.extent.width, height: anchor.geometry.extent.height), materials: [material])
+                planeEntity.name = "plane"
+                planeEntity.transform = Transform(matrix: anchor.geometry.extent.anchorFromExtentTransform)
+
+                entities[anchor.id] = planeEntity
+                contentEntity.addChild(planeEntity)
+            }
+
+            entities[anchor.id]?.transform = Transform(matrix: anchor.originFromAnchorTransform)
+        }
+
+        func removePlane(_ anchor: PlaneAnchor) {
+            entities[anchor.id]?.removeFromParent()
+            entities.removeValue(forKey: anchor.id)
+        }
+}
 
 
 struct ImmersiveContent: View {
     
     let cubeSize: Float = 0.1
-    
+    @StateObject private var model = ImmersiveContentModel()
     private var anchorEntity: AnchorEntity = AnchorEntity(.plane(.vertical, classification: .wall,
                                                                  minimumBounds: [1, 1]))
-    private let session = ARKitSession()
-    private let sceneReconstruction = SceneReconstructionProvider()
     
     private let originModel: ModelEntity = {
         let cubeMesh = MeshResource.generateBox(size: 0.1, cornerRadius: 0.1 * 0.05)
@@ -216,6 +272,9 @@ struct ImmersiveContent: View {
                     }
                 }
             }
+            .task {
+                await model.runSession()
+            }
             .gesture(
                 DragGesture().targetedToAnyEntity().onEnded({ value in
                     originModel.position = value.convert(value.location3D, from: .local, to: anchorEntity.parent!)
@@ -226,14 +285,6 @@ struct ImmersiveContent: View {
                 .backgroundStyle(Material.regular)
         }
         
-    }
-    
-    func runSession() async {
-        do {
-            try await session.run([sceneReconstruction])
-        } catch {
-            print("### Failed to start session: \(error)")
-        }
     }
     
 }
