@@ -16,6 +16,7 @@ class PixelMapData {
     let width: Int
     let height: Int
     let mapData: [[PaintColor]]
+    var isDeleted: Bool?
     
     init(createdAt: Date, title: String, width: Int, height: Int, mapData: [[PaintColor]]) {
         self.createdAt = createdAt

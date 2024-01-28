@@ -12,6 +12,7 @@ struct ArtPreviewView: View {
     @Binding var presentedArtBoard: PixelMapData?
     @State var presentingArtBoard: PixelMapData?
     
+    @Environment(\.modelContext) private var modelContext
     @Environment(\.openWindow) private var openWindow
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
         
@@ -30,6 +31,19 @@ struct ArtPreviewView: View {
                     } label: {
                         Text("Close")
                     }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        do {
+                            try flagAsDeleted()
+                            presentedArtBoard = nil
+                        } catch {
+                            //TODO: show error dialog
+                        }
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .foregroundColor(.red)
                 }
                 ToolbarItem(placement: .bottomBar) {
                     Button {
@@ -54,6 +68,13 @@ struct ArtPreviewView: View {
                 presentingArtBoard = presentedArtBoard
             }
         }
+    }
+    
+    private func flagAsDeleted() throws {
+        guard var data = presentedArtBoard else { return }
+        data.isDeleted = true
+        modelContext.insert(data)
+        try modelContext.save()
     }
     
 }

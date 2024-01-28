@@ -13,7 +13,9 @@ struct ArtCollectionView: View {
     @Environment(AppViewModel.self) private var viewModel
     @Environment(\.modelContext) private var modelContext
     
-    @Query(filter: #Predicate<PixelMapData> { _ in return true }) private var records: [PixelMapData]
+    @Query(filter: #Predicate<PixelMapData> { data in
+        return data.isDeleted == nil || data.isDeleted == false
+    }) private var records: [PixelMapData]
     
     @State private var isEditorPresented: Bool = false
     @State private var previewingPixelMap: PixelMapData? {
