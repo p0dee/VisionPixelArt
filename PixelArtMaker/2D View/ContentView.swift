@@ -11,7 +11,16 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            ArtCollectionView()
+            TabView {
+                ArtCollectionView()
+                    .tabItem { 
+                        Label("Works", systemImage: "square.grid.2x2.fill")
+                    }
+                DeletedArtCollectionView()
+                    .tabItem {
+                        Label("Deleted", systemImage: "trash.fill")
+                    }
+            }
         }
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02082EB22B6655C600E0A5E2 /* DeletedArtCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02082EB12B6655C600E0A5E2 /* DeletedArtCollectionView.swift */; };
 		025DD0902A3EDAAF00EC7563 /* PixelArtMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD08F2A3EDAAF00EC7563 /* PixelArtMakerApp.swift */; };
 		025DD0922A3EDAAF00EC7563 /* ArtEditorContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */; };
 		025DD0942A3EDAB000EC7563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025DD0932A3EDAB000EC7563 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02082EB12B6655C600E0A5E2 /* DeletedArtCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedArtCollectionView.swift; sourceTree = "<group>"; };
 		025DD08C2A3EDAAF00EC7563 /* PixelArtMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelArtMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025DD08F2A3EDAAF00EC7563 /* PixelArtMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelArtMakerApp.swift; sourceTree = "<group>"; };
 		025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtEditorContainerView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				02CFBDA82A4332160044E599 /* ContentView.swift */,
 				02CFBDA62A432F2A0044E599 /* ArtCollectionView.swift */,
+				02082EB12B6655C600E0A5E2 /* DeletedArtCollectionView.swift */,
 				025DD0912A3EDAAF00EC7563 /* ArtEditorContainerView.swift */,
 				0273CC902A54EE8800895F5D /* ArtPreviewView.swift */,
 			);
@@ -245,6 +248,7 @@
 				025DD09E2A3EDAC500EC7563 /* ArtEditor.swift in Sources */,
 				0273CCA42A59380200895F5D /* ArtCanvas.swift in Sources */,
 				02CFBDA92A4332160044E599 /* ContentView.swift in Sources */,
+				02082EB22B6655C600E0A5E2 /* DeletedArtCollectionView.swift in Sources */,
 				025DD0922A3EDAAF00EC7563 /* ArtEditorContainerView.swift in Sources */,
 				02CFBDA52A3EDFE80044E599 /* ColorPalette.swift in Sources */,
 				026931F52B5962BC00D03A03 /* SwiftUIExtensions.swift in Sources */,
